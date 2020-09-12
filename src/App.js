@@ -1,12 +1,13 @@
 import React from 'react';
 import TodoList from './TodoList';
 import Form from './Form';
+import './App.css';
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      list: ['プログラミング', 'お買い物'],
+      list: ['ごはん食べる', 'お買い物'],
       value: '',
     };
   }
@@ -29,7 +30,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="app">
         <h1>TODOアプリ</h1>
         <Form
           value={this.state.value}
