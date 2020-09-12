@@ -30,8 +30,7 @@ class Todo extends React.Component {
 
   render() {
     return (
-      <div className="app">
-        <h1>TODOアプリ</h1>
+      <div>
         <Form
           value={this.state.value}
           handleChange={this.handleChange}
